@@ -51,7 +51,7 @@ function flipCard() {
 }
 
 function checkForMatch() {
-  const [firstCard, secondCard] = Cards;
+  const [firstCard, secondCard] = flippedCards;
 
   if (firstCard.dataset.symbol === secondCard.dataset.symbol) {
     firstCard.classList.add('matched');
